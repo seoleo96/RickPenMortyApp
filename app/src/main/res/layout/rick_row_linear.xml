@@ -1,0 +1,71 @@
+<LinearLayout android:animateLayoutChanges="true"
+    android:layout_height="88dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_gravity="center"
+        android:layout_height="72dp"
+        android:layout_margin="16dp"
+        android:layout_width="72dp"
+        android:src="@drawable/star_full_blue"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/status_tv"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="movement-we breathe,"/>
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/name_tv"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="movement-we breathe,"/>
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/species_gender_tv"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="movement-we breathe," />
+    </LinearLayout>
+
+
+</LinearLayout>
+
